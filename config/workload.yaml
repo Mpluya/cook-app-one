@@ -11,12 +11,12 @@ spec:
     - name: annotations
       value:
         autoscaling.knative.dev/minScale: "1"
-  serviceClaims:
-    - name: spring-properties
-      ref:
-        apiVersion: services.apps.tanzu.vmware.com/v1alpha1
-        kind: ResourceClaim
-        name: cook-app-one-config-claim
+  # serviceClaims:
+  #   - name: spring-properties
+  #     ref:
+  #       apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+  #       kind: ResourceClaim
+  #       name: cook-app-one-config-claim
   build:
     env:
       - name: BP_JVM_VERSION
